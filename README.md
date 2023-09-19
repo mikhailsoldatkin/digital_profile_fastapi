@@ -1,1 +1,1 @@
-# digital_profile_fastapi
+### Учебный проект на FastAPI с использованием SQLAlchemy
