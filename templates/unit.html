@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Unit Info</title>
+</head>
+<body>
+<h3> Информация об организации </h3>
+{% for info_element in unit_info %}
+	{% for field_name, field_value in info_element.items() %}
+	<p>{{ field_name }}: {{ field_value }}</p>
+	{% endfor %}
+{% endfor %}
+</body>
+</html>
