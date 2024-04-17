@@ -95,5 +95,4 @@ class Unit(BaseModel):
 
     @field_serializer('org_status')
     def org_status(self, org_status: int):
-        UNIT_STATUSES = {k: v for k, v in UNIT_STATUS_CHOICES}
-        return UNIT_STATUSES.get(org_status)
+        return dict(UNIT_STATUSES).get(org_status)
